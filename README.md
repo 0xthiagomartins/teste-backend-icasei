@@ -9,21 +9,6 @@ Esta aplicação é um sistema de cadastro de produtos que mantém e sincroniza 
 
 ## Especificações Técnicas
 
-### Ajustes na Aplicação Rails
-1. Adicione um novo campo de estoque no SQLite.
-2. O novo campo deve aceitar apenas números.
-3. Ajuste a mensageria ('rails-to-go') com o novo campo.
-4. Crie um consumidor da mensageria do projeto em Golang ('go-to-rails').
-5. O consumidor deve criar e realizar a atualização no banco.
-
-### Ajustes na Aplicação Golang
-1. Adicione um novo campo de estoque no MongoDB.
-2. O novo campo deve aceitar apenas números.
-3. Crie a mensageria ('go-to-rails').
-4. Crie um consumidor da mensageria do projeto em Rails ('rails-to-go').
-5. O consumidor deve criar e realizar a atualização no banco.
-
-
 *Nota: Existe uma "falha" que caso não seja tratada, as mensageria podem entrar em loop.
 
 ## Resultado Final Esperado
